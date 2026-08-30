@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/style.css">
+<title>Lexical Worlds — Student Passport</title>
+
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🎒 LEXICAL WORLDS // STUDENT PASSPORT
+    </div>
+
+    <div class="system-status">
+        ● SYSTEM ONLINE
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+<!-- =====================================================
+     PROFILE + NEXT MOVES
+===================================================== -->
+
+<section class="top-grid">
+
+
+<div class="panel">
+
+    <h2>👤 STUDENT PROFILE</h2>
+<div class="profile">
+
+    <div class="avatar" id="student-avatar">
+        🧙
+    </div>
+
+    <div class="profile-info">
+
+        <h1 id="student-name">Loading...</h1>
+
+        <div class="rank" id="student-rank">
+            Rank: —
+        </div>
+
+        <div id="student-title">
+            Title: —
+        </div>
+
+        <div id="student-communication-power">
+            Communication Power: —
+        </div>
+
+        <div class="profile-cefr" id="student-cefr">
+            CEFR: —
+        </div>
+
+    </div>
+
+</div>
+
+<div class="stats beta-locked">
+
+    <div class="stat">
+        XP
+        <span class="stat-value" id="student-xp">0</span>
+    </div>
+
+    <div class="stat">
+        Badges
+        <span class="stat-value" id="student-badges">0</span>
+    </div>
+
+    <div class="stat">
+        Future You
+        <span class="stat-value" id="student-future-you">0</span>
+    </div>
+
+</div>
+<div class="activity-stats beta-locked">
+
+    <div>
+        <span>Last Activity</span>
+        <strong id="last-activity">—</strong>
+    </div>
+
+    <div>
+        <span>Time Spent This Week</span>
+        <strong id="week-time">—</strong>
+    </div>
+
+    <div>
+        <span>Time Spent This Month</span>
+        <strong id="month-time">—</strong>
+    </div>
+
+</div>
+
+</div>
+
+
+
+<div class="panel">
+
+    <h2>🧭 YOUR NEXT MOVES</h2>
+
+    <div class="next-moves">
+
+
+        <div class="move">
+
+            <div>
+
+                <div class="move-title">
+                    🧱 Foundation Repair — Past Tense
+                </div>
+
+                <div class="move-meta">
+                    ⏱ 15 min &nbsp; | &nbsp;
+                    🧠 Brain Load: Medium &nbsp; | &nbsp;
+                    ⚡ Can pause
+                </div>
+
+            </div>
+
+           <div class="move-actions">
+
+    <button class="start-button"
+            onclick="startMission('Foundation Repair — Past Tense')">
+        ▶ START
+    </button>
+
+    <button data-calendar>
+        📅 PLAN
+    </button>
+
+</div>
+
+        </div>
+
+
+
+        <div class="move">
+
+            <div>
+
+                <div class="move-title">
+                    🤢 Swamp of Disgust — Round 3
+                </div>
+
+                <div class="move-meta">
+                    ⏱ 12 min &nbsp; | &nbsp;
+                    🧠 Brain Load: Medium &nbsp; | &nbsp;
+                    ⚡ One go recommended
+                </div>
+
+            </div>
+
+            <button data-calendar>
+                📅 PLAN
+            </button>
+
+        </div>
+
+
+
+        <div class="move">
+
+            <div>
+
+                <div class="move-title">
+                    🕸️ Refresh: Emotions Vocabulary
+                </div>
+
+                <div class="move-meta">
+                    ⏱ 5 min &nbsp; | &nbsp;
+                    🧠 Brain Load: Low &nbsp; | &nbsp;
+                    ⚡ Quick refresh
+                </div>
+
+            </div>
+
+            <button data-calendar>
+                📅 PLAN
+            </button>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SYSTEM MESSAGES + BADGES/STAMPS
+===================================================== -->
+
+<section class="two-column beta-locked">
+
+
+<div class="panel">
+
+    <h2>📢 SYSTEM MESSAGES</h2>
+
+    <div class="message warning">
+        🕸️ <strong>Something is getting dusty.</strong><br>
+        Your Emotions vocabulary badge needs a quick refresh.
+    </div>
+
+    <div class="message success">
+        🏆 <strong>Achievement unlocked!</strong><br>
+        You completed Swamp of Disgust — Round 2.
+    </div>
+
+    <div class="message info">
+        🧭 <strong>Professor Goblin says:</strong><br>
+        Your next move has been selected.
+    </div>
+
+</div>
+
+
+
+<div class="panel">
+
+    <h2>🏅 BADGES</h2>
+
+    <div class="badges">
+
+        <div class="badge">🦠</div>
+        <div class="badge">🕵️</div>
+        <div class="badge">🤢</div>
+        <div class="badge">🧠</div>
+
+    </div>
+
+    <div class="badge-count">
+        17 / 50 collected
+    </div>
+
+    <h2 style="margin-top:25px;">🛂 PASSPORT STAMPS</h2>
+
+    <div class="stamps">
+
+        <div class="stamp">
+            SWAMP<br>SCOUT
+        </div>
+
+        <div class="stamp">
+            FIRST<br>QUEST
+        </div>
+
+        <div class="stamp">
+            BRAIN<br>HACKER
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CURRENT TARGET + ATTENTION
+===================================================== -->
+
+<section class="target-grid beta-locked">
+
+
+<div class="target">
+
+    <h2>🎯 CURRENT TARGET</h2>
+
+    <h3>
+        🗣️ Expressing opinions clearly
+    </h3>
+
+    <p>
+        Give your opinion, explain why, and respond
+        when someone disagrees with you.
+    </p>
+
+    <p>
+        <strong>Polish:</strong>
+        Wyrażanie opinii, uzasadnianie ich
+        i reagowanie na sprzeciw.
+    </p>
+
+    <div class="mission-progress">
+
+        <div class="progress-header">
+            <span>Mission Progress</span>
+            <span id="mission-progress-value">65%</span>
+        </div>
+
+        <div class="progress-bar">
+            <div
+                class="progress-fill"
+                id="mission-progress-fill"
+                style="width:65%">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="next-reward">
+
+        <strong>Next Reward</strong>
+
+        <div>🏅 <span id="reward-badge">Life Explorer Badge</span></div>
+
+        <div>+<span id="reward-xp">40</span> XP</div>
+
+        <div>
+            🔓 Unlock:
+            <span id="reward-unlock">
+                next Identity mission
+            </span>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="attention">
+
+    <h2>🕸️ NEEDS ATTENTION</h2>
+
+    <div class="attention-item">
+        🕸️ Emotions Vocabulary
+        <br>
+        <small>5 min quick refresh</small>
+    </div>
+
+    <div class="attention-item">
+        🕸️ Asking for Clarification
+        <br>
+        <small>7 min practice</small>
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LEARNING MAP
+===================================================== -->
+
+<h2 class="section-title">
+    🌍 MY LEARNING MAP
+</h2>
+
+
+<section class="learning-map beta-locked">
+<div class="map-card"><h3>🌍 LEXICAL WORLDS</h3><div class="map-item completed">✓ L1.1 Foundation Trilogy</div><div class="map-item completed">✓ L2.1 Home Base</div><div class="map-item locked">🔒 All remaining Worlds</div><button onclick="openMap()">OPEN WORLD MAP</button></div>
+<div class="map-card"><h3>🗣️ QUESTS</h3><div class="map-item completed">✓ Q24 That’s Disgusting!</div><div class="map-item locked">🔒 All remaining Quests</div><button onclick="openQuests()">OPEN QUEST MAP</button></div>
+<div class="map-card"><h3>🧰 TOOLKITS</h3><div class="map-item completed">✓ Questions & Answers</div><div class="map-item locked">🔒 All remaining Toolkits</div><button onclick="openToolkits()">OPEN TOOLKIT MAP</button></div>
+</section>
+
+
+<!-- =====================================================
+     FOUNDATION + GRAMMAR
+===================================================== -->
+
+<section class="foundation-grammar beta-locked">
+
+
+<div class="panel">
+
+    <h2>🧱 FOUNDATION REPAIR</h2>
+
+    <div class="progress-item">
+
+        <div class="progress-header">
+            Basic Sentence Structure
+            <span>80%</span>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" style="width:80%"></div>
+        </div>
+
+    </div>
+
+
+    <div class="progress-item">
+
+        <div class="progress-header">
+            Questions & Answers
+            <span>60%</span>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" style="width:60%"></div>
+        </div>
+
+    </div>
+
+
+    <div class="progress-item">
+
+        <div class="progress-header">
+            Past Tense
+            <span>40%</span>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" style="width:40%"></div>
+        </div>
+
+    </div>
+
+
+    <button onclick="openFoundation()">
+        🔧 OPEN FOUNDATION REPAIR
+    </button>
+
+</div>
+
+
+
+<div class="panel">
+
+    <h2>📚 GRAMMAR — CURRENT FOCUS</h2>
+
+    <div class="progress-item">
+
+        <div class="progress-header">
+            Past Simple vs Present Perfect
+            <span>🟡</span>
+        </div>
+
+    </div>
+
+    <div class="progress-item">
+
+        <div class="progress-header">
+            Narrative Tenses
+            <span>🟢</span>
+        </div>
+
+    </div>
+
+    <div class="progress-item">
+
+        <div class="progress-header">
+            Conditionals
+            <span>🟡</span>
+        </div>
+
+    </div>
+
+    <div class="progress-item">
+
+        <div class="progress-header">
+            Modal Verbs
+            <span>🟢</span>
+        </div>
+
+    </div>
+
+    <div class="progress-item">
+
+        <div class="progress-header">
+            Passive Voice
+            <span>🔒</span>
+        </div>
+
+    </div>
+
+
+    <button onclick="openGrammarMap()">
+        📖 VIEW COMPLETE GRAMMAR MAP
+    </button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SKILLS
+===================================================== -->
+
+<div class="panel beta-locked">
+
+    <h2>🧭 WHAT I CAN DO — MY LANGUAGE SKILLS</h2>
+
+    <section class="skills-grid">
+
+
+        <div class="skill-category">
+
+            <h3>🗣️ COMMUNICATION</h3>
+
+            <div class="skill">
+                ✓ Ask for clarification
+                <span>Poprosić o wyjaśnienie</span>
+            </div>
+
+            <div class="skill">
+                ✓ Check that I understood
+                <span>Sprawdzić, czy dobrze zrozumiałem / zrozumiałam</span>
+            </div>
+
+            <div class="skill">
+                🟡 Explain something differently
+                <span>Wyjaśnić coś w inny sposób</span>
+            </div>
+
+            <div class="skill">
+                🔒 Interrupt politely
+                <span>Grzecznie przerwać rozmówcy</span>
+            </div>
+
+            <div class="skill">
+                🔒 Change the subject naturally
+                <span>Naturalnie zmienić temat</span>
+            </div>
+
+        </div>
+
+
+
+        <div class="skill-category">
+
+            <h3>💬 OPINIONS & DISCUSSION</h3>
+
+            <div class="skill">
+                ✓ Give my opinion
+                <span>Wyrazić swoją opinię</span>
+            </div>
+
+            <div class="skill">
+                ✓ Agree and disagree
+                <span>Zgodzić się i nie zgodzić się</span>
+            </div>
+
+            <div class="skill">
+                🟡 Explain why I disagree
+                <span>Wyjaśnić, dlaczego się nie zgadzam</span>
+            </div>
+
+            <div class="skill">
+                🔒 Challenge someone's idea politely
+                <span>Grzecznie zakwestionować czyjś pomysł</span>
+            </div>
+
+            <div class="skill">
+                🔒 Defend a position
+                <span>Bronić swojego stanowiska</span>
+            </div>
+
+        </div>
+
+
+
+        <div class="skill-category">
+
+            <h3>🧠 LEARNING & STUDY</h3>
+
+            <div class="skill">
+                ✓ Use context to guess meaning
+                <span>Wykorzystać kontekst, aby odgadnąć znaczenie</span>
+            </div>
+
+            <div class="skill">
+                🟡 Remember new vocabulary
+                <span>Zapamiętać nowe słownictwo</span>
+            </div>
+
+            <div class="skill">
+                🔒 Revise effectively
+                <span>Skutecznie powtarzać materiał</span>
+            </div>
+
+            <div class="skill">
+                🔒 Take useful notes
+                <span>Robić przydatne notatki</span>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <br>
+
+    <button onclick="openSkillsMap()">
+        🗺️ OPEN COMPLETE SKILLS MAP
+    </button>
+
+</div>
+
+
+
+<!-- =====================================================
+     LEARNING LIBRARY
+===================================================== -->
+
+<section class="panel library beta-locked">
+
+    <h2>🏛️ THE LEARNING LIBRARY & REFERENCE DESK</h2>
+
+    <p>
+        Forgot how to learn something?
+        Need a reminder?
+        Start here.
+    </p>
+
+
+    <div class="library-grid">
+
+
+        <div class="library-card" onclick="openLibrary('memory')">
+
+            <span class="library-icon">🧠</span>
+
+            <strong>Memory & Brain</strong>
+
+            <small>
+                How memory works
+            </small>
+
+        </div>
+
+
+        <div class="library-card" onclick="openLibrary('vocabulary')">
+
+            <span class="library-icon">📚</span>
+
+            <strong>Vocabulary</strong>
+
+            <small>
+                Learn & remember words
+            </small>
+
+        </div>
+
+
+        <div class="library-card" onclick="openLibrary('notes')">
+
+            <span class="library-icon">✍️</span>
+
+            <strong>Note-taking</strong>
+
+            <small>
+                Take useful notes
+            </small>
+
+        </div>
+
+
+        <div class="library-card" onclick="openLibrary('revision')">
+
+            <span class="library-icon">🔄</span>
+
+            <strong>Revision</strong>
+
+            <small>
+                Revise without suffering
+            </small>
+
+        </div>
+
+
+        <div class="library-card" onclick="openLibrary('executive')">
+
+            <span class="library-icon">🧠</span>
+
+            <strong>Executive Function</strong>
+
+            <small>
+                Start. Focus. Finish.
+            </small>
+
+        </div>
+
+
+    </div>
+
+
+    <br>
+
+
+    <button onclick="openTools()">
+        🧰 OPEN MY LEARNING TOOLS
+    </button>
+
+</section>
+
+
+
+<!-- =====================================================
+     I DON'T KNOW WHAT I NEED
+===================================================== -->
+
+<section class="help-desk beta-locked">
+
+    <h2>❓ I DON'T KNOW WHAT I NEED</h2>
+
+    <p>
+        That's okay. Tell the system what kind of problem you're having.
+    </p>
+
+
+    <div class="help-options">
+
+        <button onclick="help('understand')">
+            😵 I don't understand
+        </button>
+
+        <button onclick="help('remember')">
+            🧠 I can't remember
+        </button>
+
+        <button onclick="help('say')">
+            🗣️ I don't know how to say it
+        </button>
+
+        <button onclick="help('write')">
+            ✍️ I don't know how to write it
+        </button>
+
+        <button onclick="help('learn')">
+            📚 I don't know how to learn it
+        </button>
+
+        <button onclick="help('start')">
+            ⏰ I can't make myself start
+        </button>
+
+        <button onclick="help('stuck')">
+            🆘 I'm stuck
+        </button>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<script src="js/student-data.js"></script>
+<script src="js/calendar.js"></script>
+<script src="js/passport.js"></script>
+<script src="js/app.js"></script>
+
+
+</body>
+</html>

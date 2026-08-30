@@ -1,0 +1,7 @@
+STATIC CURRICULUM MAP — BETA 1.2
+
+Lexical Worlds: 61 blocks across 5 arcs.
+Quests: 61 items.
+Toolkits: 68 items across 7 groups.
+
+Special handling: MERGE with L1.1 skipped; Future You assigned L1.5; duplicate Arc III Emergencies removed; production tags removed from Quest/Toolkit student-facing names.

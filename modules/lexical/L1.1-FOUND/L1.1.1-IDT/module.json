@@ -1,0 +1,11 @@
+  "id": "L1.1.1-IDT",
+  "title": "Identity",
+  "type": "lexical",
+  "cefr": ["A1","A2","B1","B2"],
+  "estimatedTime": "20 min",
+  "brainLoad": 2,
+  "canPause": true,
+  "prerequisites": ["TK1-QUEST"],
+  "badges": ["Identity Explorer"],
+  "xp": 40
+}

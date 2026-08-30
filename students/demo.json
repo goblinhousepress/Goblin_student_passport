@@ -1,0 +1,30 @@
+{
+    "id": "demo",
+    "name": "KASIA",
+    "avatar": "🧙",
+
+    "rank": "Swamp Scout",
+    "title": "Life Explorer",
+    "communicationPower": "Opinion Builder",
+    "cefr": "B1",
+
+    "xp": 1240,
+    "badges": 17,
+    "futureYou": 24,
+
+    "activity": {
+        "lastActivity": "2026-08-07T09:15:00",
+        "weekMinutes": 87,
+        "monthMinutes": 342
+    },
+
+    "currentMission": {
+        "name": "Expressing opinions clearly",
+        "progress": 65,
+        "nextReward": {
+            "badge": "Life Explorer Badge",
+            "xp": 40,
+            "unlock": "next Identity mission"
+        }
+    }
+}
